@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white">
+    <com.chenjishi.digitflip.DigitFlipView
+            android:id="@+id/digital_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+        <EditText
+                android:id="@+id/edit1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#9c9c9c"
+                android:hint="before number"
+                android:numeric="integer"
+                android:layout_marginRight="12dp"
+                />
+        <EditText
+                android:id="@+id/edit2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#9c9c9c"
+                android:numeric="integer"
+                android:hint="after_number"
+                />
+    </LinearLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="start"
+            android:textSize="16sp"
+            android:textColor="#F00"
+            android:onClick="onButtonClicked"
+            />
+</LinearLayout>
+
+
+
